@@ -12,7 +12,7 @@ function register() {
     let password1 = document.getElementById("password1").value;
     let password2 = document.getElementById("password2").value;
     let password;
-    if (password1 === password2 && password1.lenght >= 6) {
+    if (password1 === password2 && password1.length >= 6) {
         password = password1;
     }
     let nombre = document.getElementById("nombre").value;
