@@ -23,10 +23,8 @@ function register() {
         alert("Ingrese Apellido");
     } else if (email ===""){
         alert("Ingrese Email");
-    } else if (password ===""){
-    alert("Ingrese contraseña");
 }else if (!document.getElementById('terminos').checked){
-        alert("Acepte los terminos");
+        alert("Debe aceptar los terminos");
     }else{
 alert("Se registro correctamente");
     }
