@@ -17,7 +17,7 @@ function register() {
     if (password1 != password2) {
         errors.textContent = "Las contraseñas deben ser iguales";
 
-    } else if (password1.length <6) {
+    } else if (password1.length < 6) {
         errors.textContent = "La contraseña debe ser mayor o igual a 6";
     } else {
         password = password1;
@@ -32,6 +32,8 @@ function register() {
         errors.textContent = 'Ingrese Apellido';
     } else if (email === "") {
         errors.textContent = 'Ingrese Email';
+    } else if (!email.includes("@")||!email.includes(".com")) {
+        errors.textContent = 'Formato de mail incorrecto';
     } else if (password === undefined) {
         passerror.textContent = 'Ingrese Contraseña';
     } else if (!document.getElementById('terminos').checked) {
