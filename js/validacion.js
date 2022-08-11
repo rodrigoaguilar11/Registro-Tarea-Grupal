@@ -56,7 +56,7 @@ function register() {
     } else if (email === "") {
         errors.textContent = 'Ingrese Email';
     } else if (!email.includes("@") || !email.includes(".com")) {
-        errors.textContent = 'Formato de mail incorrecto';
+        errors.textContent = 'Formato de mail incorrecto, debe tener @ y .com';
     } else if (password === undefined) {
         passerror.textContent = 'Ingrese Contraseña';
     } else if (!document.getElementById('terminos').checked) {
