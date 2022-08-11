@@ -19,7 +19,6 @@ function register() {
 
     } else if (password1.length <6) {
         errors.textContent = "La contraseña debe ser mayor o igual a 6";
-
     } else {
         password = password1;
     }
