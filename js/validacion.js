@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function register() {
     let password1 = document.getElementById("password1").value;
     let password2 = document.getElementById("password2").value;
-    if (password1 === password2) {
-        let password = password1;
+    let password;
+    if (password1 === password2 && password1.lenght >= 6) {
+        password = password1;
     }
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
@@ -21,12 +22,14 @@ function register() {
         alert("Ingrese Nombre");
     } else if (apellido === "") {
         alert("Ingrese Apellido");
-    } else if (email ===""){
+    } else if (email === "") {
         alert("Ingrese Email");
-}else if (!document.getElementById('terminos').checked){
+    } else if (password === undefined) {
+         alert("Ingrese Contraseña");
+    } else if (!document.getElementById('terminos').checked) {
         alert("Debe aceptar los terminos");
-    }else{
-alert("Se registro correctamente");
+    } else {
+        alert("Se registro correctamente");
     }
 }
 
