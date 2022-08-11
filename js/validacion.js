@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function register() {
+    let password1 = document.getElementById("password1").value;
+    let password2 = document.getElementById("password2").value;
+    if (password1 === password2) {
+        let password = password1;
+    }
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let email = document.getElementById("email").value;
@@ -18,9 +23,10 @@ function register() {
         alert("Ingrese Apellido");
     } else if (email ===""){
         alert("Ingrese Email");
-    } else if (!document.getElementById('terminos').checked){
+    } else if (password ===""){
+    alert("Ingrese contraseña");
+}else if (!document.getElementById('terminos').checked){
         alert("Acepte los terminos");
-
     }else{
 alert("Se registro correctamente");
     }
